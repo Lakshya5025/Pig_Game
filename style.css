@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.386) !important;
+}
+
+body {
+    background-image: linear-gradient(-45deg, #8888b0, #6752de);
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60%;
+    height: 80%;
+    box-shadow: 5px 7px 16px 3px rgba(0, 0, 255, .2);
+    border-radius: 10px;
+}
+
+
+
+.reset,
+.roll,
+.hold {
+    position: absolute;
+    z-index: 100;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    font-size: 28px;
+    border: 1px solid rgba(128, 0, 128, 0.308);
+
+}
+
+.reset {
+    top: 10%;
+}
+
+.hold {
+    bottom: 22%;
+}
+
+
+.roll {
+    bottom: 10%;
+
+}
+
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 255, .2);
+}
+
+.heading {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.right-box {
+    border-radius: 0 10px 10px 0;
+    width: 50%;
+}
+
+.box {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    padding: 80px 12px;
+    background: rgba(255, 255, 255, 0.11);
+    transition: all 0.8s ease;
+}
+
+.left-box {
+    border-radius: 10px 0 0 10px;
+}
+
+.total-score {
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: #4f477b;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    z-index: 97;
+    margin-bottom: 63px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.current-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #d3bfd3;
+    border-radius: 10px;
+    width: 50%;
+    height: 20%;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 25px 10px;
+    text-align: center;
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 255, .1);
+}
+
+.current-score .current-heading {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.hidden {
+    display: none;
+}
+
+.current-score .score {
+    color: #33186B;
+    font-size: 40px;
+}
+
+.winner {
+    background: black !important;
+    color: white;
+}
+
+.winner>.current-score {
+    background: rgb(133, 133, 133);
+}
